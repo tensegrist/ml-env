@@ -1,0 +1,8 @@
+#+title: Notes
+
+* [[https://www.kaggle.com/code/jhoward/linear-model-and-neural-net-from-scratch][Linear model and neural net from scratch | Kaggle]]
+** TODO why do we not need a bias here?
+Our predictions will be calculated by multiplying each row by the coefficients, and adding them up. One interesting point here is that we don't need a separate constant term (also known as a "bias" or "intercept" term), or a column of all 1s to give the same effect has having a constant term. That's because our dummy variables already cover the entire dataset -- e.g. there's a column for "male" and a column for "female", and everyone in the dataset is in exactly one of these; therefore, we don't need a separate intercept term to cover rows that aren't otherwise part of a column.
+*** Dimensions
+x : R^891x12
+y : R^891

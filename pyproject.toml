@@ -1,0 +1,30 @@
+[tool.poetry]
+name = "pdlc"
+version = "0.1.0"
+description = ""
+authors = ["kaz <kaz@kaz.lol>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.10"
+
+numba = ">=0.56.4"
+numpy = ">=1.23.0"
+gradio = "==3.16.2"
+torch = ">=1.13.1"
+torchdiffeq = ">=0.2.3"
+torchsde = ">=0.2.5"
+transformers = "==4.19.2"
+diffusers = {extras = ["torch"], version = "^0.12.1"}
+jupyter = "^1.0.0"
+kaggle = "^1.5.12"
+polars = "^0.16.2"
+fastcore = "^1.5.28"
+fastai = "^2.7.10"
+
+[tool.poetry.scripts]
+start = "pdlc:start"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
